@@ -1,0 +1,14 @@
+---
+layout: default
+og_type: article
+---
+<article>
+  {% include article-header.html post=page %}
+
+  {{ content }}
+
+  {% if page.old_url %}
+    <hr/>
+    <em>Originally posted at <a href="{{ page.old_url }}">{{ page.old_url }}</a></em>
+  {% endif %}
+</article>

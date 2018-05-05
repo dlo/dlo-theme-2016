@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>dlo.me // {{ page.title }}</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dan Loewenherz" />
+    <meta name="title" content="{{ page.title }}" />
+    <meta name="description" content="{{ page.meta_description }}" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="https://dlo.me/favicon.ico" />
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="{{ page.og_type }}" />
+    <meta property="og:site_name" content="dlo.me" />
+    <meta property="og:description" content="{{ page.meta_description }}" />
+    <meta property="twitter:account_id" content="17824785" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <h1><a href='/'>dlo.me</a></h1>
+
+        <aside>
+          <p>By: Dan Loewenherz</p>
+        </aside>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href='/'>home</a></li>
+          <li><a href='/about/'>about</a></li>
+          <li><a href='/gpg/'>public key</a></li>
+          <li><a href='http://lionheartsw.com/'>work</a></li>
+          <li><a href='https://github.com/dlo'>github</a></li>
+          <li><a href='https://twitter.com/dwlz'>twitter</a></li>
+        </ul>
+        <ul>
+          <li><a href='/archives/'>archives</a></li>
+          <li><a href='/archives/triathlon'>triathlon</a></li>
+          <li><a href='/archives/china'>china</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        {{ content }}
+
+        <footer>
+          <span>&copy; 2009-{{ site.time|date:'%Y' }}, Dan Loewenherz</span>
+          <br/>
+          <br/>
+          <span><a href='javascript:toggleImageAutoload();' id="auto-load-image-link"></a> <sup><a href='/about/'>?</a></sup></span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
+

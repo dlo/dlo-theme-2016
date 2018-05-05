@@ -1,0 +1,5 @@
+<header>
+  <h1><a href='{% if include.post.link %}{{ include.post.link }}{% else %}{{ include.post.url }}{% endif %}' title='{{ include.post.date|date:"%m-%d-%Y" }}'>{{ include.post.title }}</a></h1>
+  <time data-url="{{ include.post.url }}" datetime='{{ include.post.date|date:"%Y-%d-%m %H:%M:%S%z" }}' pubdate>{{ include.post.date|date:"%A, %B %e, %Y" }}</time>
+</header>
+

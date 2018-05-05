@@ -1,0 +1,10 @@
+<script>
+$(function() {
+  $.getJSON("https://api.twitter.com/1/statuses/oembed.json?id={{ tweet_id }}&callback=?", function(data) {
+      $('div#tweet-1').html(data.html);
+  });
+});
+</script>
+<div class='tweet' id='tweet-1'></div>
+<div class='clear'></div>
+
